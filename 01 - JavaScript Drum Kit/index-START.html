@@ -56,12 +56,12 @@
         <audio data-key="76" src="sounds/tink.wav"></audio>
 
         <script>
-            function removeTransition(e) {
+            function removeTransitionEventListener(e) {
                 if (e.propertyName !== "transform") return;
                 this.classList.remove("playing");
             }
 
-            window.addEventListener("keydown", e => {
+            function keyDownEventListener(e) {
                 const audioElement = document.querySelector(
                     `audio[data-key="${e.keyCode}"]`
                 );
@@ -77,13 +77,19 @@
                 // Playing always from start
                 audioElement.currentTime = 0;
                 audioElement.play();
-            });
+            }
+
+            // Add an event to listen pressed keys and plays music event to windows
+            window.addEventListener("keydown", keyDownEventListener);
 
             const keys = document.querySelectorAll(".key");
 
             // adding transitionend event listener
             keys.forEach(key =>
-                key.addEventListener("transitionend", removeTransition)
+                key.addEventListener(
+                    "transitionend",
+                    removeTransitionEventListener
+                )
             );
         </script>
     </body>
