@@ -26,6 +26,15 @@ body {
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
         inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.second-hand {
+    width: 50%;
+}
+.min-hand {
+    width: 50%;
+}
+.hour-hand {
+    width: 50%;
+}
 
 .clock-face {
     position: relative;
@@ -35,9 +44,12 @@ body {
 }
 
 .hand {
-    width: 50%;
     height: 6px;
     background: black;
     position: absolute;
     top: 50%;
+    transform: rotate(90deg);
+    transform-origin: right;
+    transition: all 0.1s;
+    transition-timing-function: cubic-bezier(0.28, 1.42, 0.81, 1.35);
 }
