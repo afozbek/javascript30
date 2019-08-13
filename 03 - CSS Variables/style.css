@@ -1,6 +1,21 @@
 /*
       misc styles, nothing to do with CSS variables
     */
+:root {
+    --baseColor: #ffc600;
+    --spacing: 15px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--baseColor);
+    filter: blur(var(--blur));
+}
+
+.hl {
+    color: var(--baseColor);
+}
 
 body {
     text-align: center;
