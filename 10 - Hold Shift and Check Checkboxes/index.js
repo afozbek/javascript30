@@ -1,4 +1,4 @@
-let checkboxes = document.querySelectorAll("input");
+let checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 let isKeyPressed = false;
 let lastCheckedId = 1;
 
