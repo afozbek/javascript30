@@ -4,6 +4,7 @@ const video = player.querySelector(".viewer");
 const progress = player.querySelector(".progress");
 const progressBar = player.querySelector(".progress__filled");
 const fullscreen = player.querySelector(".fullscreen");
+const windowScreen = player.querySelector(".windowScreen");
 const toggle = player.querySelector(".toggle");
 const skipButtons = player.querySelectorAll("[data-skip]");
 const ranges = player.querySelectorAll(".player__slider");
@@ -52,6 +53,12 @@ function openFullscreen() {
     }
 }
 
+function requestWindowScreen() {
+    if (video.requestPictureInPicture) {
+        video.requestPictureInPicture();
+    }
+}
+
 // Hook up event listeners
 video.addEventListener("click", togglePlay);
 video.addEventListener("play", updateButton);
@@ -72,3 +79,4 @@ progress.addEventListener("mousedown", () => (mousedown = true));
 progress.addEventListener("mouseup", () => (mousedown = false));
 
 fullscreen.addEventListener("click", openFullscreen);
+windowScreen.addEventListener("click", requestWindowScreen);
