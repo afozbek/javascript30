@@ -17,17 +17,16 @@ const bands = [
     "An Old Dog"
 ];
 
-bands.sort((a, b) => {
-    let bandName1 = a.replace(regex, "").trim();
-    let bandName2 = b.replace(regex, "").trim();
+const filterBand = band => {
+    return band.replace(regex, "").trim();
+};
 
-    if (bandName1 < bandName2) {
+bands.sort((a, b) => {
+    if (filterBand(a) < filterBand(b)) {
         return -1;
-    } else if (bandName2 > bandName1) {
+    } else {
         return 1;
     }
-
-    return 0;
 });
 
 list.innerHTML = bands.map(band => {
