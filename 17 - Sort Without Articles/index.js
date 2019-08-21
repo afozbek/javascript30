@@ -22,11 +22,7 @@ const filterBand = band => {
 };
 
 bands.sort((a, b) => {
-    if (filterBand(a) < filterBand(b)) {
-        return -1;
-    } else {
-        return 1;
-    }
+    return filterBand(a) < filterBand(b) ? -1 : 1;
 });
 
 list.innerHTML = bands.map(band => {
