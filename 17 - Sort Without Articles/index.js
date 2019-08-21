@@ -1,4 +1,3 @@
-const list = document.querySelector("#bands");
 const regex = /^(the |a |an )/i;
 
 const bands = [
@@ -21,10 +20,12 @@ const filterBand = band => {
     return band.replace(regex, "").trim();
 };
 
-bands.sort((a, b) => {
+const sortedBands = bands.sort((a, b) => {
     return filterBand(a) < filterBand(b) ? -1 : 1;
 });
 
-list.innerHTML = bands.map(band => {
-    return `<li>${band}</li>`;
-});
+document.querySelector("#bands").innerHTML = sortedBands
+    .map(band => {
+        return `<li>${band}</li>`;
+    })
+    .join("");
