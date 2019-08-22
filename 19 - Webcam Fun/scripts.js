@@ -7,15 +7,11 @@ const snap = document.querySelector(".snap");
 function getVideo() {
     navigator.mediaDevices
         .getUserMedia({ video: true, audio: false })
-        .then(localMediaStream => {
-            console.log(localMediaStream);
-
-            video.srcObject = localMediaStream;
+        .then(userMedia => {
+            video.srcObject = userMedia;
             video.play();
         })
-        .catch(err => {
-            console.error(`OH NO!!!`, err);
-        });
+        .catch(err => console.log(err));
 }
 
 function paintToCanvas() {
@@ -28,33 +24,26 @@ function paintToCanvas() {
     return setInterval(() => {
         ctx.drawImage(video, 0, 0, width, height);
 
-        // take the pixels out of the image
         let pixels = ctx.getImageData(0, 0, width, height);
 
-        // work with pixels
+        // DO STH WITH PIXELS
+        pixels = redEffect(pixels);
 
-        pixels = rgbSplit(pixels);
-        // pixels = redEffect(pixels);
-        // pixels = greenScreen(pixels);
-
-        // ctx.globalAlpha = 0.1;
-        // put them back
         ctx.putImageData(pixels, 0, 0);
     }, 15);
 }
 
 function takePhoto() {
-    //played the sound
     snap.currentTime = 0;
     snap.play();
 
-    const data = canvas.toDataURL("image/jpeg");
-    const link = document.createElement("a");
+    const dataUrl = canvas.toDataURL("image/jpeg");
+    const a = document.createElement("a");
 
-    link.href = data;
-    link.setAttribute("download", "handsome");
-    link.innerHTML = `<img src="${data}" alt="screenshot" />`;
-    strip.insertBefore(link, strip.firstChild);
+    a.href = dataUrl;
+    a.setAttribute("download", "furkan");
+    a.innerHTML = `<img src="${dataUrl}" alt="screenshot" />`;
+    strip.insertBefore(a, strip.firstChild);
 }
 
 function redEffect(pixels) {
