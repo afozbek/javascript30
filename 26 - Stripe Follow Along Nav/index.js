@@ -4,7 +4,6 @@ const background = document.querySelector(".dropdownBackground");
 const nav = document.querySelector(".top");
 
 function handleEnter() {
-    console.log("ENTER!");
     this.classList.add("trigger-enter");
     setTimeout(
         () =>
