@@ -1,4 +1,32 @@
 # Javascript30 projects
 
--   01 - Javascript Drum Kit
--   02 - Javascript Clock
+-   [01 - Javascript Drum Kit](https://codepen.io/afozbek/pen/BaBBVdX)
+-   [02 - Javascript Clock](https://codepen.io/afozbek/pen/yLBegzy)
+-   [03 - CSS Variables](https://codepen.io/afozbek/pen/OJLMjaN)
+-   04 - Array Cardio Day 1
+-   [05 - Flex Panel Gallery](https://codepen.io/afozbek/pen/eYOJwOw)
+-   [06 - Type Ahead](https://codepen.io/afozbek/pen/VwZaboK)
+-   07 - Array Cardio Day 2
+-   [08 - Fun With HTML Canvas](https://codepen.io/afozbek/pen/GRKqGpV)
+-   09 - Dev Tools Domination
+-   [10 - Hold Shift and Check](https://codepen.io/afozbek/pen/jONrvZE)
+-   [11 - Custom Video Player](https://codepen.io/afozbek/pen/wvwWNPW)
+-   12 - Key Sequence Detection
+-   [13 - Slide in on Scroll](https://codepen.io/afozbek/pen/dybpNeX)
+-   14 - Javascript References
+-   [15 - Localstorage](https://codepen.io/afozbek/pen/QWLKRZd)
+-   [16 - Mouse Move Shadow](https://codepen.io/afozbek/pen/GRKNEpp)
+-   [17 - Sort Without Articles](https://codepen.io/afozbek/pen/mdbOMPM)
+-   18 - Adding Up Times with Reduce
+-   19 - Webcam Fun
+-   20 - Speech Detection
+-   21 - Geolocation
+-   [22 - Follow Along Link Highligter](https://codepen.io/afozbek/pen/pozRayo)
+-   [23 - Speech Syntesis](https://codepen.io/afozbek/pen/yLBgmKZ)
+-   [24 - Sticky Nav](https://codepen.io/afozbek/pen/eYOvYyV)
+-   25 - Event Capture
+-   26 - Stripe Follow Along Nav
+-   [27 - Click And Drag](https://codepen.io/afozbek/pen/oNvZLpV)
+-   28 - Video Speed Controller
+-   29 - CountDown Timer
+-   30 - Whack A Mole
