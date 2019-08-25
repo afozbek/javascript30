@@ -28,5 +28,5 @@
 -   26 - Stripe Follow Along Nav
 -   [27 - Click And Drag](https://codepen.io/afozbek/pen/oNvZLpV)
 -   [28 - Video Speed Controller](https://codepen.io/afozbek/pen/dybvpYP)
--   29 - CountDown Timer
+-   [29 - CountDown Timer](https://codepen.io/afozbek/pen/VwZpKrj)
 -   30 - Whack A Mole
