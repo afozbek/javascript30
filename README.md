@@ -25,8 +25,8 @@
 -   [23 - Speech Syntesis](https://codepen.io/afozbek/pen/yLBgmKZ)
 -   [24 - Sticky Nav](https://codepen.io/afozbek/pen/eYOvYyV)
 -   25 - Event Capture
--   26 - Stripe Follow Along Nav
+-   [26 - Stripe Follow Along Nav](https://codepen.io/afozbek/pen/aboJmXv)
 -   [27 - Click And Drag](https://codepen.io/afozbek/pen/oNvZLpV)
 -   [28 - Video Speed Controller](https://codepen.io/afozbek/pen/dybvpYP)
 -   [29 - CountDown Timer](https://codepen.io/afozbek/pen/VwZpKrj)
--   30 - Whack A Mole
+-   [30 - Whack A Mole](https://codepen.io/afozbek/pen/wvwJzQj)
